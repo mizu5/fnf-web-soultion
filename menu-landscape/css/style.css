@@ -1,0 +1,76 @@
+/* fnf-solution Landscape style.css
+/* mizurugyru
+*/
+
+/* 기본 스타일 */
+body, html { font-size: 100%; padding: 0; margin: 0;}
+ 
+/* 초기화 */
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+/* 구버전 브라우저 초기화 hack */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+ 
+.clearfix:after {
+	clear: both;
+}
+
+body{
+	background-color:#fff;
+}
+.mWrap{
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	border:1px solid #ddd;
+	min-height:1000px;
+	padding:0 20px;
+	border:1px solid #ddd;	
+}
+.lWrap{
+	width:200px;
+	background-color:#ddd;
+	padding:20px 0;	
+}
+.cWrap{		
+	-webkit-flex:1;
+	flex:1;
+	background-color:#eee;
+	padding:20px 30px 0;
+	height:auto;
+}
+.logo{
+	width:180px;
+	height:50px;
+	padding:0 20px;
+	border:2px solid #333;
+	text-align:center;
+	line-height:50px;
+	margin:0 auto;
+}
+.fNav{
+	position:absolute;
+	bottom:0px;
+}
+nav ul{list-style:none;margin:0;padding:0}
+nav ul li{height:30px;}
+nav ul li a{text-align:center;width:100%;display:block;}
+nav ul.mMenu{display:none;margin-top:30px;}
+nav	a{text-align:center;width:100%; margin-top:10px; cursor:pointer; display:block;}
+@media (min-width:1279px){
+.mWrap{
+	width: 1280px;
+	background-color:#fff;
+	margin: 0 auto;
+
+	padding:0;
+}
+}

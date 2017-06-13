@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<head>
+	<meta charset="UTF-8">
+	<title>FNF-web</title>
+	<link rel="stylesheet" href="./css/style.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script>
+	$(document).ready(function(){
+		$('#plusMenu').click(function(){
+			if($('.mMenu').css("display") == "none"){
+			$('.mMenu').slideDown();
+			$(this).attr('class','fa fa-minus-circle fa-2x');
+			}else{
+			$('.mMenu').slideUp();
+			$(this).attr('class','fa fa-plus-circle fa-2x');			
+			}
+		});
+	});
+  </script>
+</head>
+<body>
+	<div class="mWrap">
+		<div class="lWrap">
+			<div class="logo">LOGO</div>
+			<nav>
+
+			<ul class="mMenu">
+				<li><a href="#">Member</a></li>
+				<li><a href="#">Discography</a></li>
+				<li><a href="#">Schedule</a></li>
+				<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+			</ul>
+			<a href="#"><i class="fa fa-plus-circle fa-2x" aria-hidden="true" id="plusMenu"></i></a>
+			</nav>
+			<nav class="fNav">
+				<ul>
+					<li>주소:</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="cWrap">
+		</div>
+		</div>
+	</div>
+</body>
+</html>
